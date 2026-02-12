@@ -1,0 +1,13 @@
+{
+  "name": "ovvoc-test-growth-15",
+  "version": "1.0.0",
+  "description": "React 18 component library with deprecated patterns",
+  "scripts": {
+    "test": "node test/components.test.js"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "prop-types": "15.8.1"
+  }
+}
