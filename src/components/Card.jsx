@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// PropTypes removed - use TypeScript for type checking
 
 function Card({ title, subtitle, children, elevated, onClick }) {
   const className = `card ${elevated ? 'card-elevated' : ''}`;

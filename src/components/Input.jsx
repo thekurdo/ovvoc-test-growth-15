@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
+// PropTypes removed - use TypeScript for type checking
 
-const Input = forwardRef(function Input({ label, type, placeholder, error, onChange }, ref) {
+const Input = forwardRef(function Input({ label, type = 'text', placeholder = '', error = null, onChange }, ref) {
   return (
     <div className="form-group">
       {label && <label>{label}</label>}
@@ -16,19 +16,5 @@ const Input = forwardRef(function Input({ label, type, placeholder, error, onCha
     </div>
   );
 });
-
-Input.defaultProps = {
-  type: 'text',
-  placeholder: '',
-  error: null,
-};
-
-Input.propTypes = {
-  label: PropTypes.string,
-  type: PropTypes.string,
-  placeholder: PropTypes.string,
-  error: PropTypes.string,
-  onChange: PropTypes.func,
-};
 
 export default Input;
