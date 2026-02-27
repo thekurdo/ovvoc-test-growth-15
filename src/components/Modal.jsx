@@ -1,5 +1,5 @@
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
-import PropTypes from 'prop-types';
+// PropTypes removed - use TypeScript for type checking
 
 const Modal = forwardRef(function Modal({ title, children, onClose }, ref) {
   const [isOpen, setIsOpen] = useState(false);
